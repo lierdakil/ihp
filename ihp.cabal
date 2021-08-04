@@ -142,6 +142,8 @@ common shared-properties
             -haddock
             -O1
             -threaded
+            -j
+            +RTS -A256m -n4m -H512m -qg -N -RTS
 
 library
     import: shared-properties
